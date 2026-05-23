@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-KIvjIXfl.js"></script>
+    <script type="module" crossorigin src="./assets/index-CwkJHnk1.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
   </head>
   <body class="page">
@@ -53,12 +53,12 @@
                 placeholder="Имя"
 
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
                 
                 required
                 minlength="2"
                 maxlength="40"
-                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
-              />
+                />
               <span class="popup__error" id="user-name-error"></span>
             </label>
             <label class="popup__label">
@@ -100,10 +100,13 @@
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
 
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+                
                 required
                 minlength="2"
                 maxlength="30"
-              />
+                />
               <span class="popup__error" id="place-name-error"></span>
             </label>
             <label class="popup__label">
@@ -113,6 +116,7 @@
                 id="place-link"
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
+                type="url"
 
                 required
               />
